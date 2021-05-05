@@ -1,0 +1,45 @@
+{
+    "valuationOrder": {
+        "title": {
+            "doctorName": "王仁甫",
+            "filedate": "2020/08/12"
+        },
+		 "fromwhere": {
+           "north":0,
+            "middle":1,
+			"south":0,
+			"workt":0
+        },
+		"worker": {
+            "workerName": "路人甲",
+            "phonenum": "C1",
+			"teleport":28781963
+        },
+        "askinglist": {
+            "ask1": 1,
+			"ask2": 0,
+			"ask3": 0,
+			"ask4": 1,
+			"ask5": 1,
+			"ask6": 1,
+            "ask7": 0,
+			"ask8": 0,
+			"ask9": 0,
+			"ask10": 1,
+			"xrayn":"blueXary",
+			"others":"mario check",
+			"sickname":"懶癌"
+        },
+		"forsicker":{
+		"baonum":298378758,
+		"baoname":"王曉明",
+		"baosex":"男",
+		"baoage":71,
+		"baojob":"演員",
+		"sickhis":"暫無",
+		"askfor":"沒啥好問的",
+		"suggest":"沒救了 下一個"
+		}
+		
+}
+}

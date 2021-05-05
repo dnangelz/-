@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.13.0.final using JasperReports Library version 6.13.0-46ada4d1be8f3c5985fd0b6146f3ed44caed6f05  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="medic" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c9289c9b-c081-4553-8475-3a573968536b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sicktest.xml"/>
+	<queryString language="JSON">
+		<![CDATA[valuationOrder]]>
+	</queryString>
+	<field name="title" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="title"/>
+		<fieldDescription><![CDATA[title]]></fieldDescription>
+	</field>
+	<field name="title.doctorName" class="java.lang.String"/>
+	<field name="title.filedate" class="java.lang.String"/>
+	<field name="fromwhere" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="fromwhere"/>
+		<fieldDescription><![CDATA[fromwhere]]></fieldDescription>
+	</field>
+	<field name="fromwhere.north" class="java.lang.String"/>
+	<field name="fromwhere.middle" class="java.lang.String"/>
+	<field name="fromwhere.south" class="java.lang.String"/>
+	<field name="fromwhere.workt" class="java.lang.String"/>
+	<field name="worker" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="worker"/>
+		<fieldDescription><![CDATA[worker]]></fieldDescription>
+	</field>
+	<field name="worker.workerName" class="java.lang.String"/>
+	<field name="worker.phonenum" class="java.lang.String"/>
+	<field name="worker.teleport" class="java.lang.String"/>
+	<field name="askinglist" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="askinglist"/>
+		<fieldDescription><![CDATA[askinglist]]></fieldDescription>
+	</field>
+	<field name="askinglist.ask1" class="java.lang.String"/>
+	<field name="askinglist.ask2" class="java.lang.String"/>
+	<field name="askinglist.ask3" class="java.lang.String"/>
+	<field name="askinglist.ask4" class="java.lang.String"/>
+	<field name="askinglist.ask5" class="java.lang.String"/>
+	<field name="askinglist.ask6" class="java.lang.String"/>
+	<field name="askinglist.ask7" class="java.lang.String"/>
+	<field name="askinglist.ask8" class="java.lang.String"/>
+	<field name="askinglist.ask9" class="java.lang.String"/>
+	<field name="askinglist.ask10" class="java.lang.String"/>
+	<field name="askinglist.xrayn" class="java.lang.String"/>
+	<field name="askinglist.others" class="java.lang.String"/>
+	<field name="askinglist.sickname" class="java.lang.String"/>
+	<field name="forsicker" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="forsicker"/>
+		<fieldDescription><![CDATA[forsicker]]></fieldDescription>
+	</field>
+	<field name="forsicker.baonum" class="java.lang.String"/>
+	<field name="forsicker.baoname" class="java.lang.String"/>
+	<field name="forsicker.baosex" class="java.lang.String"/>
+	<field name="forsicker.baoage" class="java.lang.String"/>
+	<field name="forsicker.baojob" class="java.lang.String"/>
+	<field name="forsicker.sickhis" class="java.lang.String"/>
+	<field name="forsicker.askfor" class="java.lang.String"/>
+	<field name="forsicker.suggest" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="177" y="10" width="200" height="30" uuid="84740244-127a-4b82-9ad3-d54ac74d3b9c"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[核保 醫務諮詢單]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="463" splitType="Stretch">
+			<staticText>
+				<reportElement x="-10" y="0" width="160" height="30" uuid="c0856b92-0a18-4d4c-ae85-73896b89afca"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[TO:醫務諮詢室醫師:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="150" y="0" width="100" height="30" uuid="620396dd-07da-4e7a-9ec8-ff8807467b0e"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{title.doctorName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="250" y="0" width="40" height="30" uuid="89e8faee-fa32-4af5-8141-caf6d2d34036"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[日期:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="0" width="100" height="30" uuid="78c66ca5-1b39-45c5-94ed-e35678c736ce"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{title.filedate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="0" width="125" height="30" uuid="0eb355b6-ec5f-43b2-9d3e-bca5ef754053"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[頁數(含病歷)共：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="30" width="581" height="30" uuid="a4bdee64-8047-4da8-8ec8-135f634ebe01"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[FROM：		北區			中區			南區			作業整合部]]></text>
+			</staticText>
+			<image>
+				<reportElement x="70" y="30" width="30" height="30" uuid="3f4c9aa2-9353-496d-9211-ff81e745a26e"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="70" y="30" width="30" height="30" uuid="5d44df04-1aec-43c9-a931-3eded466455e">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{fromwhere.north}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="200" y="30" width="30" height="30" uuid="2fd65e7f-49ab-4242-bcc4-de41f17a8598"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="320" y="30" width="30" height="30" uuid="3a56e6f3-44c4-4cdf-842d-3949c418aeb6"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="440" y="30" width="30" height="30" uuid="51ce46f2-9651-4c18-a43b-8b8730768162"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="201" y="30" width="29" height="30" uuid="b2a81089-5ae1-4c3c-b728-524c6f9d1fc9">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{fromwhere.middle}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="320" y="30" width="30" height="30" uuid="fe4bb302-e6a6-4004-967e-ed52efd7d298">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{fromwhere.south}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="440" y="30" width="30" height="30" uuid="dac7fe89-8592-4bf4-ab4f-48e7f8c59e15">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{fromwhere.workt}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="-10" y="60" width="580" height="30" uuid="c9327a4d-fe39-47d7-95b1-cf24aa8c8615"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["核保人員："+$F{worker.workerName}+"(C/C1/B/A/P)分機："+$F{worker.phonenum}+"傳真："+$F{worker.teleport}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-10" y="90" width="459" height="50" uuid="57c6595e-d81c-4567-89da-0864d5b1ff8a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[諮詢項目：
+　    疾病診斷判斷　     檢驗或檢查報告判讀　     心電圖　     心臟超音波　　]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="452" y="90" width="118" height="50" uuid="401d7c97-0989-4fee-bf6d-c345317cace9"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{askinglist.xrayn}+"X光片判讀"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-10" y="140" width="290" height="30" uuid="7270219e-0f10-458c-8eb1-d29f1aa968c9"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[　   病理切片報告判讀　    體檢報告內容判讀]]></text>
+			</staticText>
+			<image>
+				<reportElement x="452" y="172" width="27" height="26" uuid="5887faa7-de1e-4e72-8829-3154aaf42d7a"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="450" y="172" width="29" height="26" uuid="1b095d0f-20f8-4964-8046-11f79e94d56e">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{askinglist.ask10}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="280" y="140" width="290" height="30" uuid="c6b2bf4f-15cc-4fdf-a769-e11c28cd54b0"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{askinglist.sickname}+"(疾病名稱)需加做之檢查項目"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-10" y="170" width="459" height="30" uuid="e7edfa5b-dd7a-4742-adb1-7852de2418bc"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[　   治療方式或用藥與疾病之必要性     　 整體風險評估之核保結論]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="485" y="168" width="93" height="30" uuid="cf1484c8-6ab1-4d7d-a9e9-5b303fa9d2a3"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["其他："+$F{askinglist.others}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="-9" y="110" width="27" height="26" uuid="c5d1ff35-fe1e-4246-94fe-6ddff0076d13"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="-11" y="110" width="29" height="26" uuid="6a0b5937-7880-45ec-bc59-1fdfd6f6d4d8">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{askinglist.ask1}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="112" y="110" width="27" height="26" uuid="a6b8449e-ac40-4f54-84df-3d34a4d40059"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="110" y="110" width="29" height="26" uuid="f0320ee0-2770-4e67-8d4f-a0e4a2a90d45">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{askinglist.ask2}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="265" y="110" width="27" height="26" uuid="c44b48fd-67b0-4e7a-bc68-36debde00e75"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="265" y="110" width="29" height="26" uuid="431033ff-e817-4e0b-bc99-2058a75f4a90">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{askinglist.ask3}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="342" y="110" width="27" height="26" uuid="8e961657-81fb-4a6c-b364-500abecdf9f1"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="341" y="110" width="29" height="26" uuid="4167fe44-cab2-426f-bac2-e96137e34cb3">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{askinglist.ask4}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="-10" y="142" width="27" height="26" uuid="8fb24015-115a-4872-a557-77fddeb7d23e"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="-12" y="142" width="29" height="26" uuid="71d958fd-d2f5-4d1f-82e5-a35205cedad6">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{askinglist.ask5}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="131" y="142" width="27" height="26" uuid="c81a8374-8ee9-444a-97b0-a3ea1dbf1d5c"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="130" y="142" width="29" height="26" uuid="95eff3a7-48c3-459e-9d1c-bc86b67da814">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{askinglist.ask6}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="282" y="142" width="27" height="26" uuid="3f1f27a1-60f2-4ec7-9272-40b559ce7063"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="280" y="142" width="29" height="26" uuid="823203bb-1fe6-4cff-8a4f-6b40b97fb3b7">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{askinglist.ask7}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="-11" y="170" width="27" height="26" uuid="73a93937-3a7b-4ca2-bf1d-25f2cf85498e"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="-13" y="170" width="29" height="26" uuid="12f8a19e-c368-47d5-84f3-ee4ef2e648a6">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{askinglist.ask8}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="221" y="172" width="27" height="26" uuid="ec6d6c67-d3ff-402f-a0df-34e6f1669491"/>
+				<imageExpression><![CDATA["markN.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="220" y="172" width="29" height="26" uuid="b515fcfd-7679-423e-86f0-25a6c48f12b8">
+					<printWhenExpression><![CDATA[new java.lang.Boolean($F{askinglist.ask9}.equals("1"))]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["markY.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="-9" y="200" width="289" height="30" uuid="7034a81d-0a0e-4751-a234-34660b6d17e4"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["保單號碼："+$F{forsicker.baonum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="282" y="200" width="288" height="30" uuid="94f08881-428e-4123-a3b7-fab59c265e2a"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["被保人姓名："+$F{forsicker.baoname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-9" y="230" width="186" height="30" uuid="0e709375-ddce-404e-b0b9-f6e9da2c0b71"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["性別："+$F{forsicker.baosex}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="230" width="197" height="30" uuid="39aecf35-470d-4d6f-812f-95ba24ae560a"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["年齡"+$F{forsicker.baoage}+"歲"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="230" width="195" height="30" uuid="7f64cbb2-fe2d-4e22-9065-b3f359daeace"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["職業："+$F{forsicker.baojob}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-9" y="260" width="579" height="30" uuid="391be318-37b8-4d05-b538-71ee0e337644"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[被保險人病史敘述：(過去病史&現在病史)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-9" y="290" width="579" height="30" uuid="f4a9fcfd-591d-42b9-8d47-7316cfdf0a60"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forsicker.sickhis}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-9" y="320" width="579" height="30" uuid="11c6284e-63c9-4421-827f-ad644814f542"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[諮詢事項：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-9" y="350" width="579" height="30" uuid="b9d8348f-b0fd-4db7-9e5f-831c336298a9"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forsicker.askfor}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-10" y="380" width="580" height="30" uuid="20482ed5-9175-444d-8c69-de46a3b9d959"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[顧問醫生建議：]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-9" y="410" width="579" height="30" uuid="7986dc24-a0aa-4745-9f52-371fc67fc7a3"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forsicker.suggest}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="0" width="55" height="30" uuid="42c964b3-4cfd-4fc5-bb7c-40943819a569"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<pageFooter>
+		<band height="34" splitType="Stretch">
+			<componentElement>
+				<reportElement x="10" y="0" width="100" height="30" uuid="57c8dec1-7dda-4ade-8f75-8cf9f79bc127"/>
+				<jr:EAN13 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA["123456789012"]]></jr:codeExpression>
+				</jr:EAN13>
+			</componentElement>
+			<componentElement>
+				<reportElement x="427" y="0" width="100" height="30" uuid="8dac724d-c7f1-4e9c-a6f3-97a782cec21b"/>
+				<jr:EAN13 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA["123456789012"]]></jr:codeExpression>
+				</jr:EAN13>
+			</componentElement>
+		</band>
+	</pageFooter>
+</jasperReport>

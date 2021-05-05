@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.13.0.final using JasperReports Library version 6.13.0-46ada4d1be8f3c5985fd0b6146f3ed44caed6f05  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="at3" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="425f3268-f4b3-45cd-9ede-be8773661fb4">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="workrepo.xml"/>
+	<queryString language="JSON">
+		<![CDATA[HBD]]>
+	</queryString>
+	<field name="worker" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="worker"/>
+		<fieldDescription><![CDATA[worker]]></fieldDescription>
+	</field>
+	<field name="wanter" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="wanter"/>
+		<fieldDescription><![CDATA[wanter]]></fieldDescription>
+	</field>
+	<field name="whattodo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="whattodo"/>
+		<fieldDescription><![CDATA[whattodo]]></fieldDescription>
+	</field>
+	<field name="answer" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="answer"/>
+		<fieldDescription><![CDATA[answer]]></fieldDescription>
+	</field>
+	<field name="barleft" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="barleft"/>
+		<fieldDescription><![CDATA[barleft]]></fieldDescription>
+	</field>
+	<field name="barright" class="java.lang.Long">
+		<property name="net.sf.jasperreports.json.field.expression" value="barright"/>
+		<fieldDescription><![CDATA[barright]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="76" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="31" width="140" height="39" uuid="4dd2a1ff-09ad-41f8-b68b-749124293558"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[會 辦 單]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="27" width="180" height="49" uuid="ea6e4598-1115-4d2b-8432-0e95acb799f6"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="微軟正黑體" size="32" isBold="true"/>
+				</textElement>
+				<text><![CDATA[富邦人壽]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="257" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="82" height="30" uuid="6a037187-7fa1-48a1-be5d-0552d90ba721"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[會辦部門]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="92" y="0" width="188" height="30" uuid="0d16d5bd-d5f2-4754-9048-7d576cfdb8b1"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{worker}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="0" width="100" height="30" uuid="abc8dac5-05cd-4d0f-8fa0-dc07d4770f47"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[查詢單位]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="0" width="180" height="30" uuid="73d5ca36-b8ba-42e2-8b56-93b9dee817fc"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{wanter}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="60" width="82" height="50" uuid="cb82794c-11e5-41b1-a30d-7722f56f9f1a"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[主管簽章]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="60" width="100" height="50" uuid="c440f237-b7e2-4fb6-808e-af5501b94ca0"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[承辦簽章]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="30" width="550" height="30" uuid="4a951821-8d15-466b-9e9b-387dd6e97192"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA["待辦事項:"+$F{whattodo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="110" width="550" height="30" uuid="dbc105c6-f977-44dd-9f79-4027f09aa457"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA["會辦部門回復:"+$F{answer}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="140" width="81" height="50" uuid="5d517e87-95cc-4173-a319-605280556d0c"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[主管簽章]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="140" width="100" height="50" uuid="1853b2d5-5b1d-46e8-a653-78d26c1f8a50"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[承辦簽章]]></text>
+			</staticText>
+			<image>
+				<reportElement x="150" y="60" width="50" height="50" uuid="fdc21c42-7c8e-434a-b6be-19f1ac1155c7"/>
+				<imageExpression><![CDATA["Test.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="445" y="60" width="50" height="50" uuid="6c54c73e-519d-480b-9a17-4ce7925e0ab3"/>
+				<imageExpression><![CDATA["Test.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="150" y="140" width="50" height="50" uuid="08c64871-6cac-4ff9-8340-9d626446814d"/>
+				<imageExpression><![CDATA["Test.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="445" y="140" width="50" height="50" uuid="6ad92155-ece0-4211-b519-ca010f4feaeb"/>
+				<imageExpression><![CDATA["Test.png"]]></imageExpression>
+			</image>
+			<componentElement>
+				<reportElement x="280" y="210" width="100" height="30" uuid="2fb79770-06ca-44cc-aa54-5158245ffe34"/>
+				<jr:EAN13 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA[$F{barright}]]></jr:codeExpression>
+				</jr:EAN13>
+			</componentElement>
+			<line>
+				<reportElement x="92" y="190" width="188" height="1" uuid="7d775163-7865-4323-8530-728c71e3543e"/>
+			</line>
+			<line>
+				<reportElement x="560" y="60" width="1" height="131" uuid="eb40e67c-2d3c-4152-9318-8b357229a82a"/>
+			</line>
+			<line>
+				<reportElement x="380" y="190" width="180" height="1" uuid="ce95832a-95d3-41a4-a992-98ac722e6034"/>
+			</line>
+			<componentElement>
+				<reportElement x="10" y="210" width="130" height="30" uuid="3e6449c0-cf79-4c11-b0f0-cf23cbdc186b"/>
+				<jr:EAN13 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA[$F{barleft}]]></jr:codeExpression>
+				</jr:EAN13>
+			</componentElement>
+		</band>
+	</columnHeader>
+</jasperReport>
